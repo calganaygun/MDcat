@@ -1,0 +1,31 @@
+name: Generate new README.html
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    if: "!contains(toJSON(github.event.commits.*.message), '[Auto Update]')"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run MDCat
+        run: |
+          python mdcat.py README.md
+      - name: Commit Changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: '[Auto Update] README.html'
+          add: 'README.html'
