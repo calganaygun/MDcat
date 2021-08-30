@@ -2,7 +2,7 @@
 
 # MDCat
 
-A super simple script which converts your markdown files to GitHub styled HTML site.
+A super simple script which converts your markdown files to [GitHub styled](https://primer.style/) HTML site.
 
 ## Features
 
@@ -14,7 +14,7 @@ A super simple script which converts your markdown files to GitHub styled HTML s
 Usage is very simple:
 
 ```sh
-python mdcat.py <markdown_file>
+python mdcat.py <markdown_file.md>
 ```
 It automatically generates HTML file in the same directory.
 ## Demo
