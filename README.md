@@ -16,7 +16,7 @@ Usage is very simple:
 ```sh
 python mdcat.py <markdown_file>
 ```
-It automatically converts the MD file to the same directory.
+It automatically generates HTML file in the same directory.
 ## Demo
 
 You can see this markdown file's HTML on:
