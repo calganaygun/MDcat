@@ -2,7 +2,8 @@
 
 # MDCat
 
-A super simple script which converts your markdown files to [GitHub styled](https://primer.style/) HTML site.
+A super simple script which uses the GitHub API to convert your markdown files to [GitHub styled](https://primer.style/) HTML site.
+
 
 ## Features
 
