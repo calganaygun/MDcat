@@ -22,7 +22,7 @@ if response.status_code == 200:
     with open("template.html", "r", encoding="utf-8") as template_file:
         TEMPLATE_CONTENT = template_file.read()
     html_content = TEMPLATE_CONTENT.replace("$MD_TITLE", MD_FILE_NAME).replace("$MD_HTML", response.text)
-    with open(MD_FILE_DIR + MD_FILE_NAME.strip(".md") + ".html", "w", encoding="utf-8") as export_file:
+    with open(MD_FILE_DIR + "/" + MD_FILE_NAME.strip(".md") + ".html", "w", encoding="utf-8") as export_file:
         export_file.write(html_content)
 else:
     print("ERROR:", response.json()["message"])
