@@ -71,13 +71,39 @@
 <li>Light/dark mode</li>
 <li>Code highlighting</li>
 </ul>
+<div class="markdown-heading"><h2 class="heading-element">Installation</h2><a id="user-content-installation" class="anchor" aria-label="Permalink: Installation" href="#installation"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="markdown-heading"><h3 class="heading-element">Prerequisites</h3><a id="user-content-prerequisites" class="anchor" aria-label="Permalink: Prerequisites" href="#prerequisites"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Go 1.18 or later installed on your system.</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Install from source</h3><a id="user-content-install-from-source" class="anchor" aria-label="Permalink: Install from source" href="#install-from-source"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>
+<p>Clone the repository:</p>
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/calganaygun/MDcat.git
+<span class="pl-c1">cd</span> MDcat</pre></div>
+</li>
+<li>
+<p>Build the binary:</p>
+<div class="highlight highlight-source-shell"><pre>go build -o mdcat mdcat.go</pre></div>
+</li>
+<li>
+<p>(Optional) Add to your PATH:</p>
+<div class="highlight highlight-source-shell"><pre>sudo mv mdcat /usr/local/bin/</pre></div>
+</li>
+</ol>
+<div class="markdown-heading"><h3 class="heading-element">Direct installation</h3><a id="user-content-direct-installation" class="anchor" aria-label="Permalink: Direct installation" href="#direct-installation"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>You can also install directly using Go:</p>
+<div class="highlight highlight-source-shell"><pre>go install github.com/calganaygun/MDcat@latest</pre></div>
 <div class="markdown-heading"><h2 class="heading-element">Usage</h2><a id="user-content-usage" class="anchor" aria-label="Permalink: Usage" href="#usage"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
-<div class="highlight highlight-source-shell"><pre>go run mdcat.go <span class="pl-k">&lt;</span>markdown_file.md<span class="pl-k">&gt;</span></pre></div>
+<div class="highlight highlight-source-shell"><pre>mdcat input.md
+<span class="pl-c"><span class="pl-c">#</span> Or</span>
+mdcat -i input.md -o output.html</pre></div>
 <p>The generated HTML will be placed next to the input file.</p>
 <div class="markdown-heading"><h2 class="heading-element">Demo</h2><a id="user-content-demo" class="anchor" aria-label="Permalink: Demo" href="#demo"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
 <p>You can see this README rendered <a href="https://refined-github-html-preview.kidonng.workers.dev/calganaygun/MDcat/raw/main/README.html" rel="nofollow">here</a>.</p>
 <div class="markdown-heading"><h2 class="heading-element">Thanks</h2><a id="user-content-thanks" class="anchor" aria-label="Permalink: Thanks" href="#thanks"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
-<p>Special thanks to <a href="https://www.instagram.com/sanmiyorumamaevet/" rel="nofollow">Karma</a> for the cat illustration in the header.</p>
+<p>Special thanks to <a href="https://www.instagram.com/karmatulek.tattoo/" rel="nofollow">Karma</a> for the cat illustration in the header.</p>
 
         </article>
       </div>
