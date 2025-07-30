@@ -1,4 +1,4 @@
-![Header image of MDcat](header.png)
+![Header image of MDcat](images/header.png)
 
 # MDCat
 
