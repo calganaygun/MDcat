@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>README.md</title>
+
+  <!-- Core styles -->
+  <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/primer/github-syntax-light@master/lib/github-light.css" id="light-hl" />
+  <link rel="stylesheet alternate" href="https://cdn.jsdelivr.net/gh/primer/github-syntax-dark@master/lib/github-dark.css" id="dark-hl" />
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .header-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--color-canvas-default);
+      border-bottom: 1px solid var(--color-border-default);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .content-container {
+      padding: 3rem 1.5rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .Box-body {
+      padding: 2rem !important;
+    }
+
+    .markdown-body {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    @media (min-width: 768px) {
+      .content-container { padding: 4rem 2rem 5rem; }
+      .Box-body { padding: 3rem !important; }
+    }
+
+    @media (min-width: 1024px) {
+      .content-container { padding: 5rem 3rem 6rem; }
+    }
+  </style>
+</head>
+
+<body id="markdown-body" data-color-mode="light" data-dark-theme="light">
+  <div class="header-bar">
+    <button id="theme-button" class="btn btn-sm" type="button" aria-label="Toggle theme">
+      <span id="theme-icon" class="iconify" data-icon="octicon:sun-16"></span>
+    </button>
+  </div>
+
+  <main class="content-container container-xl">
+    <div class="Box Box--responsive">
+      <div class="Box-body">
+        <article class="markdown-body entry-content container-lg" itemprop="text">
+          <p><a target="_blank" rel="noopener noreferrer" href="images/header.png"><img src="images/header.png" alt="Header image of MDcat" style="max-width: 100%;"></a></p>
+<div class="markdown-heading"><h1 class="heading-element">MDCat</h1><a id="user-content-mdcat" class="anchor" aria-label="Permalink: MDCat" href="#mdcat"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>MDcat converts Markdown documents to <a href="https://primer.style/" rel="nofollow">GitHub styled</a> HTML by leveraging the GitHub Markdown API.</p>
+<div class="markdown-heading"><h2 class="heading-element">Features</h2><a id="user-content-features" class="anchor" aria-label="Permalink: Features" href="#features"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>Light/dark mode</li>
+<li>Code highlighting</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element">Usage</h2><a id="user-content-usage" class="anchor" aria-label="Permalink: Usage" href="#usage"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="highlight highlight-source-shell"><pre>go run mdcat.go <span class="pl-k">&lt;</span>markdown_file.md<span class="pl-k">&gt;</span></pre></div>
+<p>The generated HTML will be placed next to the input file.</p>
+<div class="markdown-heading"><h2 class="heading-element">Demo</h2><a id="user-content-demo" class="anchor" aria-label="Permalink: Demo" href="#demo"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>You can see this README rendered <a href="https://refined-github-html-preview.kidonng.workers.dev/calganaygun/MDcat/raw/main/README.html" rel="nofollow">here</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element">Thanks</h2><a id="user-content-thanks" class="anchor" aria-label="Permalink: Thanks" href="#thanks"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Special thanks to <a href="https://www.instagram.com/sanmiyorumamaevet/" rel="nofollow">Karma</a> for the cat illustration in the header.</p>
+
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/gh/calganaygun/MDcat@main/theme.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</body>
+</html>
