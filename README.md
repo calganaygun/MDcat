@@ -2,26 +2,24 @@
 
 # MDCat
 
-A super simple script which uses the GitHub API to convert your markdown files to [GitHub styled](https://primer.style/) HTML site.
-
+MDcat converts Markdown documents to [GitHub styled](https://primer.style/) HTML by leveraging the GitHub Markdown API.
 
 ## Features
 
 - Light/dark mode
 - Code highlighting
-  
+
 ## Usage
 
-Usage is very simple:
-
 ```sh
-python mdcat.py <markdown_file.md>
+go run mdcat.go <markdown_file.md>
 ```
-It automatically generates HTML file in the same directory.
+
+The generated HTML will be placed next to the input file.
+
 ## Demo
 
-You can see this markdown file's HTML on:
-[here](https://refined-github-html-preview.kidonng.workers.dev/calganaygun/MDcat/raw/main/README.html) 
+You can see this README rendered [here](https://refined-github-html-preview.kidonng.workers.dev/calganaygun/MDcat/raw/main/README.html).
 
 ## Thanks
 
